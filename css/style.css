@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular.woff2') format('woff2'),
+         url('../fonts/quicksand-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'quicksandregular', Helvetica, Arial,sans-serif;
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1.5em;
+}
+
+.logo {
+    display: block;
+    margin: 6em auto;
+    max-height: 6em;
+    width: auto;
+}
+
+.boton {
+    position: relative;
+    margin: 10em auto;
+    display: block;
+}
+
+.nombre_input {
+    color: white;
+    margin: 1.7em auto;
+    text-align: right;
+}
+
+input[name=directorio_fuentes], input[name=directorio_paginacion]{
+    height: 3em;
+    border-radius: 5px;
+    padding: 10px;
+    padding: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+    margin: 1em auto;
+    display: block;
+    color: black;
+}
+
+input[name=directorio_fuentes]:focus, input[name=directorio_paginacion]:focus {
+    outline:0px;
+    border: solid 1px white;
+    box-shadow: 0 0 5px 1px white;
+}
+
+.btn_ayuda, .btn_ayuda:visited, .btn_ayuda:focus, .btn_ayuda:link {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    font-size: 2em;
+    outline: none;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+
+.btn_ayuda:hover, .btn_ayuda:active, .btn_ayuda:active:focus  {
+    color: #f89a2f;
+    background-color: rgba(0,0,0,0);
+    transform: scale(1.5);
+    box-shadow: none;
+    outline: none;
+}
+
+.listado_toc, .listado_pagina {
+    height: 80% !important;
+    padding: 0em 1em 0em 1em;
+    background-color: white;
+    overflow: auto;
+    overflow-x: hidden;
+    margin-bottom: 1em;
+    border-radius: .5em;
+}
+
+section.listados {
+    margin-top: 3em;
+}
+
+.titulo_manual {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-dialog {
+    width: 90% !important;
+}
